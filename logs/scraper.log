@@ -659,3 +659,112 @@ Apple iPhone 16 (Ultramarine, 256 GB) ₹79,900    4.6 https://www.flipkart.com/
 2025-11-03 23:34:08 [ERROR] [main] - ❌ Prediction failed: 'StandardScaler' object is not subscriptable
 2025-11-03 23:34:08 [INFO] [main] - ✅ DSS pipeline run completed successfully.
 
+2025-11-06 23:13:36 [INFO] [amazon_scraper] - Logger initialized for module: amazon_scraper at 2025-11-06 23:13:36
+2025-11-06 23:13:36 [INFO] [flipkart_scraper] - Logger initialized for module: flipkart_scraper at 2025-11-06 23:13:36
+2025-11-06 23:13:40 [INFO] [save_to_csv] - Logger initialized for module: save_to_csv at 2025-11-06 23:13:40
+2025-11-06 23:13:49 [INFO] [main] - Logger initialized for module: main at 2025-11-06 23:13:49
+2025-11-06 23:14:18 [INFO] [main] - Starting unified scraping for: samsung s25
+2025-11-06 23:14:18 [INFO] [main] - 🛒 Fetching Amazon results...
+2025-11-06 23:14:18 [INFO] [amazon_scraper] - Searching Amazon for 'samsung s25'...
+2025-11-06 23:14:20 [ERROR] [main] - ❌ Amazon scraper failed: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
+2025-11-06 23:14:20 [INFO] [main] - 🛍️ Fetching Flipkart results...
+2025-11-06 23:14:20 [INFO] [flipkart_scraper] - Searching Flipkart for 'samsung s25'...
+2025-11-06 23:14:47 [INFO] [flipkart_scraper] - ✅ Flipkart scraper extracted 10 valid products.
+2025-11-06 23:14:47 [INFO] [main] - ✅ Flipkart: 10 items scraped.
+2025-11-06 23:14:47 [INFO] [save_to_csv] - 💾 10 records saved to outputs\scraped_results_20251106_231447.csv
+2025-11-06 23:14:47 [DEBUG] [save_to_csv] - Last 5 entries:
+                                        title   price rating                                                                                                                                                                                                                                                                                                                                                                                       url platform           timestamp
+      Samsung Galaxy S25 FE 5G (Navy, 512 GB) ₹77,999    4.6       https://www.flipkart.com/samsung-galaxy-s25-fe-5g-navy-512-gb/p/itm686ea83612e85?pid=MOBHFHS5Y7HGHF3U&lid=LSTMOBHFHS5Y7HGHF3UWSPG5R&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=45e876ad-b96f-4181-a861-f2b25077f860.MOBHFHS5Y7HGHF3U.SEARCH&ppt=hp&ppn=hp&ssid=fljbvpih400000001762451079761&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:14:47
+         Samsung Galaxy S25 5G (Mint, 256 GB) ₹80,999    4.6          https://www.flipkart.com/samsung-galaxy-s25-5g-mint-256-gb/p/itm2196514814ed7?pid=MOBH8K8UQ5RYGUPF&lid=LSTMOBH8K8UQ5RYGUPFAUX9LE&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=45e876ad-b96f-4181-a861-f2b25077f860.MOBH8K8UQ5RYGUPF.SEARCH&ppt=hp&ppn=hp&ssid=fljbvpih400000001762451079761&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:14:47
+     Samsung Galaxy S25 FE 5G (White, 512 GB) ₹77,999    4.6      https://www.flipkart.com/samsung-galaxy-s25-fe-5g-white-512-gb/p/itm686ea83612e85?pid=MOBHFHS5DCMRES6Y&lid=LSTMOBHFHS5DCMRES6YVSDFFE&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=45e876ad-b96f-4181-a861-f2b25077f860.MOBHFHS5DCMRES6Y.SEARCH&ppt=hp&ppn=hp&ssid=fljbvpih400000001762451079761&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:14:47
+Samsung Galaxy S25 5G (Silver Shadow, 512 GB) ₹92,999    4.6 https://www.flipkart.com/samsung-galaxy-s25-5g-silver-shadow-512-gb/p/itmc9fd27809a5a8?pid=MOBH8K8UT2JSMYCQ&lid=LSTMOBH8K8UT2JSMYCQMUDHAJ&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=45e876ad-b96f-4181-a861-f2b25077f860.MOBH8K8UT2JSMYCQ.SEARCH&ppt=hp&ppn=hp&ssid=fljbvpih400000001762451079761&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:14:47
+         Samsung Galaxy S25 5G (Navy, 512 GB) ₹92,999    4.6         https://www.flipkart.com/samsung-galaxy-s25-5g-navy-512-gb/p/itm0e06d4b8e47a6?pid=MOBH8K8UGHPTJGTM&lid=LSTMOBH8K8UGHPTJGTMFLUP5N&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=45e876ad-b96f-4181-a861-f2b25077f860.MOBH8K8UGHPTJGTM.SEARCH&ppt=hp&ppn=hp&ssid=fljbvpih400000001762451079761&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:14:47
+2025-11-06 23:14:47 [INFO] [main] - 💾 Data saved successfully. Total entries: 10
+2025-11-06 23:14:47 [INFO] [main] - 🤖 Training model on scraped data...
+2025-11-06 23:14:47 [INFO] [main] - 📈 Model training completed and saved.
+2025-11-06 23:16:02 [INFO] [main] - ✅ DSS pipeline run completed successfully.
+
+2025-11-06 23:16:52 [INFO] [amazon_scraper] - Logger initialized for module: amazon_scraper at 2025-11-06 23:16:52
+2025-11-06 23:16:52 [INFO] [flipkart_scraper] - Logger initialized for module: flipkart_scraper at 2025-11-06 23:16:52
+2025-11-06 23:16:53 [INFO] [save_to_csv] - Logger initialized for module: save_to_csv at 2025-11-06 23:16:53
+2025-11-06 23:16:54 [INFO] [main] - Logger initialized for module: main at 2025-11-06 23:16:54
+2025-11-06 23:17:03 [INFO] [main] - Starting unified scraping for: samsung s25
+2025-11-06 23:17:03 [INFO] [main] - 🛒 Fetching Amazon results...
+2025-11-06 23:17:03 [INFO] [amazon_scraper] - Searching Amazon for 'samsung s25'...
+2025-11-06 23:17:05 [INFO] [amazon_scraper] - Found 16 candidate nodes on Amazon.
+2025-11-06 23:17:05 [INFO] [amazon_scraper] - ✅ Amazon scraper extracted 10 valid products.
+2025-11-06 23:17:05 [INFO] [main] - ✅ Amazon: 10 items scraped.
+2025-11-06 23:17:05 [INFO] [main] - 🛍️ Fetching Flipkart results...
+2025-11-06 23:17:05 [INFO] [flipkart_scraper] - Searching Flipkart for 'samsung s25'...
+2025-11-06 23:17:19 [INFO] [flipkart_scraper] - ✅ Flipkart scraper extracted 10 valid products.
+2025-11-06 23:17:19 [INFO] [main] - ✅ Flipkart: 10 items scraped.
+2025-11-06 23:17:19 [INFO] [save_to_csv] - 💾 20 records saved to outputs\scraped_results_20251106_231719.csv
+2025-11-06 23:17:19 [DEBUG] [save_to_csv] - Last 5 entries:
+                                        title   price rating                                                                                                                                                                                                                                                                                                                                                                                       url platform           timestamp
+      Samsung Galaxy S25 FE 5G (Navy, 512 GB) ₹77,999    4.6       https://www.flipkart.com/samsung-galaxy-s25-fe-5g-navy-512-gb/p/itm686ea83612e85?pid=MOBHFHS5Y7HGHF3U&lid=LSTMOBHFHS5Y7HGHF3UWSPG5R&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=a0ae5f64-d84d-4f3d-a898-9e00e3ce394a.MOBHFHS5Y7HGHF3U.SEARCH&ppt=hp&ppn=hp&ssid=c31bchoslc0000001762451231875&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:17:19
+         Samsung Galaxy S25 5G (Mint, 256 GB) ₹80,999    4.6          https://www.flipkart.com/samsung-galaxy-s25-5g-mint-256-gb/p/itm2196514814ed7?pid=MOBH8K8UQ5RYGUPF&lid=LSTMOBH8K8UQ5RYGUPFAUX9LE&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=a0ae5f64-d84d-4f3d-a898-9e00e3ce394a.MOBH8K8UQ5RYGUPF.SEARCH&ppt=hp&ppn=hp&ssid=c31bchoslc0000001762451231875&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:17:19
+     Samsung Galaxy S25 FE 5G (White, 512 GB) ₹77,999    4.6      https://www.flipkart.com/samsung-galaxy-s25-fe-5g-white-512-gb/p/itm686ea83612e85?pid=MOBHFHS5DCMRES6Y&lid=LSTMOBHFHS5DCMRES6YVSDFFE&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=a0ae5f64-d84d-4f3d-a898-9e00e3ce394a.MOBHFHS5DCMRES6Y.SEARCH&ppt=hp&ppn=hp&ssid=c31bchoslc0000001762451231875&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:17:19
+Samsung Galaxy S25 5G (Silver Shadow, 512 GB) ₹92,999    4.6 https://www.flipkart.com/samsung-galaxy-s25-5g-silver-shadow-512-gb/p/itmc9fd27809a5a8?pid=MOBH8K8UT2JSMYCQ&lid=LSTMOBH8K8UT2JSMYCQMUDHAJ&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=a0ae5f64-d84d-4f3d-a898-9e00e3ce394a.MOBH8K8UT2JSMYCQ.SEARCH&ppt=hp&ppn=hp&ssid=c31bchoslc0000001762451231875&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:17:19
+         Samsung Galaxy S25 5G (Navy, 512 GB) ₹92,999    4.6         https://www.flipkart.com/samsung-galaxy-s25-5g-navy-512-gb/p/itm0e06d4b8e47a6?pid=MOBH8K8UGHPTJGTM&lid=LSTMOBH8K8UGHPTJGTMFLUP5N&marketplace=FLIPKART&q=samsung+s25&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=a0ae5f64-d84d-4f3d-a898-9e00e3ce394a.MOBH8K8UGHPTJGTM.SEARCH&ppt=hp&ppn=hp&ssid=c31bchoslc0000001762451231875&qH=6a9f45229db62ab7 Flipkart 2025-11-06 23:17:19
+2025-11-06 23:17:19 [INFO] [main] - 💾 Data saved successfully. Total entries: 20
+2025-11-06 23:17:19 [INFO] [main] - 🤖 Training model on scraped data...
+2025-11-06 23:17:19 [INFO] [main] - 📈 Model training completed and saved.
+2025-11-06 23:18:43 [ERROR] [main] - ❌ Prediction failed: 'StandardScaler' object is not subscriptable
+2025-11-06 23:18:43 [INFO] [main] - ✅ DSS pipeline run completed successfully.
+
+2025-11-06 23:20:04 [INFO] [amazon_scraper] - Logger initialized for module: amazon_scraper at 2025-11-06 23:20:04
+2025-11-06 23:20:04 [INFO] [flipkart_scraper] - Logger initialized for module: flipkart_scraper at 2025-11-06 23:20:04
+2025-11-06 23:20:04 [INFO] [save_to_csv] - Logger initialized for module: save_to_csv at 2025-11-06 23:20:04
+2025-11-06 23:20:05 [INFO] [main] - Logger initialized for module: main at 2025-11-06 23:20:05
+2025-11-06 23:20:17 [INFO] [main] - Starting unified scraping for: Samsung S25 Ultra
+2025-11-06 23:20:17 [INFO] [main] - 🛒 Fetching Amazon results...
+2025-11-06 23:20:17 [INFO] [amazon_scraper] - Searching Amazon for 'Samsung S25 Ultra'...
+2025-11-06 23:20:19 [INFO] [amazon_scraper] - Found 17 candidate nodes on Amazon.
+2025-11-06 23:20:19 [INFO] [amazon_scraper] - ✅ Amazon scraper extracted 10 valid products.
+2025-11-06 23:20:19 [INFO] [main] - ✅ Amazon: 10 items scraped.
+2025-11-06 23:20:19 [INFO] [main] - 🛍️ Fetching Flipkart results...
+2025-11-06 23:20:19 [INFO] [flipkart_scraper] - Searching Flipkart for 'Samsung S25 Ultra'...
+2025-11-06 23:20:33 [INFO] [flipkart_scraper] - ✅ Flipkart scraper extracted 10 valid products.
+2025-11-06 23:20:33 [INFO] [main] - ✅ Flipkart: 10 items scraped.
+2025-11-06 23:20:33 [INFO] [save_to_csv] - 💾 20 records saved to outputs\scraped_results_20251106_232033.csv
+2025-11-06 23:20:33 [DEBUG] [save_to_csv] - Last 5 entries:
+                                                     title     price rating                                                                                                                                                                                                                                                                                                                                                                                                           url platform           timestamp
+      Samsung Galaxy S25 Ultra 5G (Titanium Black, 512 GB) ₹1,41,999    4.6        https://www.flipkart.com/samsung-galaxy-s25-ultra-5g-titanium-black-512-gb/p/itmc5f14b041aa5b?pid=MOBH8K8UZPUKTTXK&lid=LSTMOBH8K8UZPUKTTXKDDLTOJ&marketplace=FLIPKART&q=Samsung+S25+Ultra&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=2c98e3cd-823d-4848-b57b-0a0a42b20b17.MOBH8K8UZPUKTTXK.SEARCH&ppt=hp&ppn=hp&ssid=quprs8vrj40000001762451425858&qH=4acde96a0dfea12f Flipkart 2025-11-06 23:20:33
+ Samsung Galaxy S25 Ultra 5G (Titanium Silverblue, 512 GB) ₹1,41,999    4.6   https://www.flipkart.com/samsung-galaxy-s25-ultra-5g-titanium-silverblue-512-gb/p/itm2ce28bbf75993?pid=MOBH8K8UVQCSQE3Z&lid=LSTMOBH8K8UVQCSQE3Z5XVS59&marketplace=FLIPKART&q=Samsung+S25+Ultra&store=tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=2c98e3cd-823d-4848-b57b-0a0a42b20b17.MOBH8K8UVQCSQE3Z.SEARCH&ppt=hp&ppn=hp&ssid=quprs8vrj40000001762451425858&qH=4acde96a0dfea12f Flipkart 2025-11-06 23:20:33
+Samsung Galaxy S25 Ultra 5G (Titanium Whitesilver, 512 GB) ₹1,41,999    4.6  https://www.flipkart.com/samsung-galaxy-s25-ultra-5g-titanium-whitesilver-512-gb/p/itm28d4275302a07?pid=MOBH8K8URFQT737M&lid=LSTMOBH8K8URFQT737MZHYHWJ&marketplace=FLIPKART&q=Samsung+S25+Ultra&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=2c98e3cd-823d-4848-b57b-0a0a42b20b17.MOBH8K8URFQT737M.SEARCH&ppt=hp&ppn=hp&ssid=quprs8vrj40000001762451425858&qH=4acde96a0dfea12f Flipkart 2025-11-06 23:20:33
+       Samsung Galaxy S25 Ultra 5G (Titanium Gray, 512 GB) ₹1,41,999    4.6         https://www.flipkart.com/samsung-galaxy-s25-ultra-5g-titanium-gray-512-gb/p/itm4edf9ee3c6c2d?pid=MOBH8K8U2FZXCP2R&lid=LSTMOBH8K8U2FZXCP2R0C4UGD&marketplace=FLIPKART&q=Samsung+S25+Ultra&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=2c98e3cd-823d-4848-b57b-0a0a42b20b17.MOBH8K8U2FZXCP2R.SEARCH&ppt=hp&ppn=hp&ssid=quprs8vrj40000001762451425858&qH=4acde96a0dfea12f Flipkart 2025-11-06 23:20:33
+Samsung Galaxy S25 Ultra 5G (Titanium Silverblue, 1024 GB) ₹1,65,999    4.6 https://www.flipkart.com/samsung-galaxy-s25-ultra-5g-titanium-silverblue-1024-gb/p/itm7d0e1ef71672e?pid=MOBH8K8UFSUDUUZZ&lid=LSTMOBH8K8UFSUDUUZZBUZ1UW&marketplace=FLIPKART&q=Samsung+S25+Ultra&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=2c98e3cd-823d-4848-b57b-0a0a42b20b17.MOBH8K8UFSUDUUZZ.SEARCH&ppt=hp&ppn=hp&ssid=quprs8vrj40000001762451425858&qH=4acde96a0dfea12f Flipkart 2025-11-06 23:20:33
+2025-11-06 23:20:33 [INFO] [main] - 💾 Data saved successfully. Total entries: 20
+2025-11-06 23:20:33 [INFO] [main] - 🤖 Training model on scraped data...
+2025-11-06 23:20:33 [INFO] [main] - 📈 Model training completed and saved.
+2025-11-06 23:21:04 [ERROR] [main] - ❌ Prediction failed: 'StandardScaler' object is not subscriptable
+2025-11-06 23:21:04 [INFO] [main] - ✅ DSS pipeline run completed successfully.
+
+2025-11-06 23:25:21 [INFO] [amazon_scraper] - Logger initialized for module: amazon_scraper at 2025-11-06 23:25:21
+2025-11-06 23:25:21 [INFO] [flipkart_scraper] - Logger initialized for module: flipkart_scraper at 2025-11-06 23:25:21
+2025-11-06 23:25:22 [INFO] [save_to_csv] - Logger initialized for module: save_to_csv at 2025-11-06 23:25:22
+2025-11-06 23:25:22 [INFO] [main] - Logger initialized for module: main at 2025-11-06 23:25:22
+2025-11-06 23:25:42 [INFO] [main] - Starting unified scraping for: Samsung S25
+2025-11-06 23:25:42 [INFO] [main] - 🛒 Fetching Amazon results...
+2025-11-06 23:25:42 [INFO] [amazon_scraper] - Searching Amazon for 'Samsung S25'...
+2025-11-06 23:25:44 [INFO] [amazon_scraper] - Found 16 candidate nodes on Amazon.
+2025-11-06 23:25:44 [INFO] [amazon_scraper] - ✅ Amazon scraper extracted 10 valid products.
+2025-11-06 23:25:44 [INFO] [main] - ✅ Amazon: 10 items scraped.
+2025-11-06 23:25:44 [INFO] [main] - 🛍️ Fetching Flipkart results...
+2025-11-06 23:25:44 [INFO] [flipkart_scraper] - Searching Flipkart for 'Samsung S25'...
+2025-11-06 23:25:57 [INFO] [flipkart_scraper] - ✅ Flipkart scraper extracted 10 valid products.
+2025-11-06 23:25:57 [INFO] [main] - ✅ Flipkart: 10 items scraped.
+2025-11-06 23:25:57 [INFO] [save_to_csv] - 💾 20 records saved to outputs\scraped_results_20251106_232557.csv
+2025-11-06 23:25:57 [DEBUG] [save_to_csv] - Last 5 entries:
+                                        title   price rating                                                                                                                                                                                                                                                                                                                                                                                           url platform           timestamp
+      Samsung Galaxy S25 FE 5G (Navy, 512 GB) ₹77,999    4.6       https://www.flipkart.com/samsung-galaxy-s25-fe-5g-navy-512-gb/p/itm686ea83612e85?pid=MOBHFHS5Y7HGHF3U&lid=LSTMOBHFHS5Y7HGHF3UWSPG5R&marketplace=FLIPKART&q=Samsung+S25&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=5307c119-dc5b-40c8-bea1-9adddb616435.MOBHFHS5Y7HGHF3U.SEARCH&ppt=None&ppn=None&ssid=fr8svcjt800000001762451750292&qH=c4607e85ac9ed737 Flipkart 2025-11-06 23:25:57
+         Samsung Galaxy S25 5G (Mint, 256 GB) ₹80,999    4.6          https://www.flipkart.com/samsung-galaxy-s25-5g-mint-256-gb/p/itm2196514814ed7?pid=MOBH8K8UQ5RYGUPF&lid=LSTMOBH8K8UQ5RYGUPFAUX9LE&marketplace=FLIPKART&q=Samsung+S25&store=tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=5307c119-dc5b-40c8-bea1-9adddb616435.MOBH8K8UQ5RYGUPF.SEARCH&ppt=None&ppn=None&ssid=fr8svcjt800000001762451750292&qH=c4607e85ac9ed737 Flipkart 2025-11-06 23:25:57
+     Samsung Galaxy S25 FE 5G (White, 512 GB) ₹77,999    4.6      https://www.flipkart.com/samsung-galaxy-s25-fe-5g-white-512-gb/p/itm686ea83612e85?pid=MOBHFHS5DCMRES6Y&lid=LSTMOBHFHS5DCMRES6YVSDFFE&marketplace=FLIPKART&q=Samsung+S25&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=5307c119-dc5b-40c8-bea1-9adddb616435.MOBHFHS5DCMRES6Y.SEARCH&ppt=None&ppn=None&ssid=fr8svcjt800000001762451750292&qH=c4607e85ac9ed737 Flipkart 2025-11-06 23:25:57
+Samsung Galaxy S25 5G (Silver Shadow, 512 GB) ₹92,999    4.6 https://www.flipkart.com/samsung-galaxy-s25-5g-silver-shadow-512-gb/p/itmc9fd27809a5a8?pid=MOBH8K8UT2JSMYCQ&lid=LSTMOBH8K8UT2JSMYCQMUDHAJ&marketplace=FLIPKART&q=Samsung+S25&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=5307c119-dc5b-40c8-bea1-9adddb616435.MOBH8K8UT2JSMYCQ.SEARCH&ppt=None&ppn=None&ssid=fr8svcjt800000001762451750292&qH=c4607e85ac9ed737 Flipkart 2025-11-06 23:25:57
+         Samsung Galaxy S25 5G (Navy, 512 GB) ₹92,999    4.6         https://www.flipkart.com/samsung-galaxy-s25-5g-navy-512-gb/p/itm0e06d4b8e47a6?pid=MOBH8K8UGHPTJGTM&lid=LSTMOBH8K8UGHPTJGTMFLUP5N&marketplace=FLIPKART&q=Samsung+S25&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=5307c119-dc5b-40c8-bea1-9adddb616435.MOBH8K8UGHPTJGTM.SEARCH&ppt=None&ppn=None&ssid=fr8svcjt800000001762451750292&qH=c4607e85ac9ed737 Flipkart 2025-11-06 23:25:57
+2025-11-06 23:25:57 [INFO] [main] - 💾 Data saved successfully. Total entries: 20
+2025-11-06 23:25:57 [INFO] [main] - 🤖 Training model on scraped data...
+2025-11-06 23:25:58 [INFO] [main] - 📈 Model training completed and saved.
+2025-11-06 23:26:24 [INFO] [main] - 💡 Predicted price for 'Samsung Galaxy S25 Ultra 5G': ₹85283.93
+2025-11-06 23:26:24 [INFO] [main] - ✅ DSS pipeline run completed successfully.
+
