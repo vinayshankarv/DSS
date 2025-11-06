@@ -1,0 +1,14 @@
+[theme]
+
+# This is the main accent color, taken from your button gradient
+primaryColor = "#8e2de2"
+
+# This creates the dark theme, based on your button's text and hover
+backgroundColor = "#0a0a0a"
+secondaryBackgroundColor = "#1E1E1E"
+
+# This is the text color, from your button's 'ghostwhite'
+textColor = "#F8F8FF"
+
+# You can use "sans serif", "serif", or "monospace"
+font = "sans serif"
