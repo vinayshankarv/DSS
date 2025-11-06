@@ -3,6 +3,8 @@ import pandas as pd
 import os
 import joblib
 import plotly.express as px
+from ml_pipeline.predict import predict_price
+from datetime import datetime
 
 # --- PATH SETUP ---
 BASE_DIR = os.path.dirname(__file__)
@@ -60,14 +62,77 @@ if page == "Dashboard":
         with st.expander("Summary Statistics"):
             st.write(df.describe(include='all'))
 
-        if "price_inr" in df.columns:
-            fig = px.histogram(df, x="price_inr", nbins=30, title="Price Distribution (₹)")
+        # --- Corrected Price Column ---
+        # Add cleaning logic, as price is scraped as text
+        if "price" in df.columns:
+            df["price"] = pd.to_numeric(
+                df["price"].astype(str).str.replace(r"[^\d.]", "", regex=True),
+                errors="coerce"
+            )
+            df = df.dropna(subset=["price"])
+
+            # Now plot using the correct 'price' column
+            fig = px.histogram(df, x="price", nbins=30, title="Price Distribution (₹)")
             st.plotly_chart(fig, use_container_width=True)
         else:
-            st.warning("Column `price_inr` not found in dataset.")
+            st.warning("Column `price` not found in dataset.")
 
+            
 # --- PRICE PREDICTION PAGE ---
 elif page == "Price Prediction":
+    st.header("💰 Price Prediction Tool")
+
+    # We don't need to load the model, `predict_price` does that.
+    # We just check if the model file exists to show a nice message.
+    model_path = os.path.join(MODEL_DIR, "rf_model.pkl")
+    if not os.path.exists(model_path):
+        st.error("❌ Model file (rf_model.pkl) not found. Please run the training pipeline first.")
+    else:
+        st.success("✅ Model (rf_model.pkl) found. Ready to predict.")
+        
+        st.markdown("### 1. Enter Product Details")
+        
+        # --- These are the REAL inputs the model needs ---
+        title = st.text_input("Product Title", "Samsung Galaxy S25 Ultra 5G")
+        platform = st.selectbox("Platform", ["Amazon", "Flipkart"])
+        rating = st.slider("Product Rating", min_value=1.0, max_value=5.0, value=4.5, step=0.1)
+        
+        st.markdown("### 2. Enter Competitor Price (Optional)")
+        competitor_price = st.number_input("Competitor Price (₹)", min_value=1, value=85000)
+
+        # --- Button to run prediction ---
+        if st.button("Predict Recommended Price", key="predict_button"):
+            if not title.strip():
+                st.error("❌ Please enter a product title.")
+            else:
+                # 1. Build the sample_record (just like in main.py)
+                sample_record = {
+                    "title": title,
+                    "platform": platform,
+                    "rating": rating,
+                    "timestamp": datetime.now().strftime("%Y-%m-%d") # Use today's date
+                }
+                
+                try:
+                    # 2. Call the CORRECT prediction function
+                    prediction = predict_price(sample_record, model_name="rf")
+                    
+                    # 3. The rest of the app's comparison logic is fine
+                    st.success(f"📦 **Predicted Price: ₹{prediction:.2f}**")
+                    st.info(f"Competitor Price: ₹{competitor_price:.2f}")
+
+                    diff_percent = ((prediction - competitor_price) / competitor_price) * 100
+                    
+                    if diff_percent > 5:
+                        st.warning(f"⚠️ **Overpriced:** Your prediction is {diff_percent:.1f}% *higher* than the competitor.")
+                    elif diff_percent < -5:
+                        st.error(f"📉 **Underpriced:** Your prediction is {abs(diff_percent):.1f}% *lower* than the competitor.")
+                    else:
+                        st.success("✅ **Optimal Range:** Price is within ±5% of the competitor.")
+                
+                except Exception as e:
+                    # This will catch any errors from the pipeline
+                    st.error(f"⚠️ Prediction failed: {e}")
     st.header("💰 Price Prediction Tool")
 
     model, err = load_model()
@@ -112,16 +177,29 @@ elif page == "Analytics":
     st.header("📊 Analytics Overview")
 
     df, _ = load_latest_data()
+
+    # We also need to clean the price column for visualization
     if df is not None and not df.empty:
-        if "source" in df.columns and "price_inr" in df.columns:
-            fig = px.box(df, x="source", y="price_inr", color="source", title="Price Distribution by Source")
+        if "price" in df.columns:
+            df["price"] = pd.to_numeric(
+                df["price"].astype(str).str.replace(r"[^\d.]", "", regex=True),
+                errors="coerce"
+            )
+            df = df.dropna(subset=["price"])
+
+        # --- Corrected Plot 1 (uses 'platform' and 'price') ---
+        if "platform" in df.columns and "price" in df.columns:
+            fig = px.box(df, x="platform", y="price", color="platform", title="Price Distribution by Platform")
             st.plotly_chart(fig, use_container_width=True)
         else:
-            st.warning("Columns `source` or `price_inr` not found for visualization.")
+            st.warning("Columns `platform` or `price` not found for visualization.")
 
-        if "product_name" in df.columns and "price_inr" in df.columns:
-            fig2 = px.scatter(df, x="product_name", y="price_inr", title="Product-wise Price Variance")
+        # --- Corrected Plot 2 (uses 'title' and 'price') ---
+        if "title" in df.columns and "price" in df.columns:
+            fig2 = px.scatter(df, x="title", y="price", title="Product-wise Price Variance")
             st.plotly_chart(fig2, use_container_width=True)
+        else:
+            st.warning("Columns `title` or `price` not found for visualization.")
     else:
         st.warning("No data available for analytics.")
 
