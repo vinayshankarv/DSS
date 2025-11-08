@@ -1,0 +1,20 @@
+Pricing Intelligence Report (2025-11-03 23:34:27)
+Source: scraped_results_20251103_233334.csv
+
+Min Price: ₹51,499
+Max Price: ₹134,900
+Mean Price: ₹75,639
+Median Price: ₹69,900
+Std Deviation: ₹15,711
+Volatility Index: 110.26%
+Platform Bias: 1.95%
+Confidence Index: 79.2%
+
+Price Recommendations:
+  Penetration Strategy: ₹67,783
+  Competitive Strategy: ₹75,639
+  Premium Strategy: ₹83,494
+
+Platform Averages:
+  Amazon Mean: ₹76,378
+  Flipkart Mean: ₹74,900
